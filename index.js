@@ -1,7 +1,6 @@
 /*
 - Criado por: DevNetoBr
 - Data de criação: 03/07/2023
-- Não precisa deixar os créditos se for usar :)
 */
 
 
@@ -11,14 +10,14 @@ const fs = require("fs");
 const path = require("path");
 const app = express();
 
-// objeto que pegas as pastas que utilizaremos
+// Objeto que pegas as pastas que utilizaremos
 const folders = {
   public: path.join(__dirname, 'public'),
   pages: path.join(__dirname, 'public', 'views'),
   routes: path.join(__dirname, 'src','routes')
 };
 
-//informações do servidor, recomendo que deixe isso em um arquivo .json fora da index :)
+//Informações do servidor, recomendo que deixe isso em um arquivo .json fora da index :)
 let client = {
   port: 3000,
 }
@@ -39,8 +38,7 @@ fs.readdirSync(folders.routes).forEach((file) =>{
   };
 });
 } catch (e){
-  console.log("[ERROR] - Erro ao renderizar páginas!\n"+e)
+  console.log("[ERROR] - Error!\n"+e)
 };
 
-
-app.listen(client.port, () => console.log("[LOGS] - Projeto online")); // iniciando servidor na porta 3000
+app.listen(client.port, () => console.log("[LOGS] - Online")); // iniciando servidor na porta 3000
