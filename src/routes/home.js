@@ -1,13 +1,13 @@
-module.exports = {
-  name: 'home', // Nome do arquivo .ejs referente a está página
-  run: (app, render) =>{// Renderizando a página
 
-    app.get('/', (req, res) =>{
-      const crypto = require('crypto');
-      const passwordLength = 10;
-      const password = crypto.randomBytes(Math.ceil(passwordLength / 2)).toString('hex').slice(0, passwordLength);
-      render(res, {password: password}); // Usando a função render da index.js. Essa função irá renderizar a página home.ejs. Os valores dentro do objeto serão enviados para a página home.ejs
-      
-    })
-  }
-}
+
+const router = require('express').Router();
+const config = require('../configs/definitions.json');
+const crypto = require('crypto');
+
+
+router.get('/', async (req, res) => {
+    const password = crypto.randomBytes(Math.ceil(10 / 2)).toString('hex').slice(0, 10);
+    res.render(config.FOLDERS.pages + '/home.ejs', { password: password}); //mandando um objeto para dentro do site, onde poderá ser acessado.
+});
+
+module.exports = router;
