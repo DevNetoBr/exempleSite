@@ -24,8 +24,8 @@ Para executar o site de exemplo, siga as etapas abaixo:
 1. Certifique-se de ter o Node.js instalado em seu ambiente de desenvolvimento.
 2. Clone este repositório para o seu computador.
 3. Abra um terminal na pasta raiz do projeto.
-4. Execute o comando `npm install` para instalar as dependências do projeto.
-5. Execute o comando `npm start` para iniciar o servidor.
+4. Execute o comando `npm init` para instalar as dependências do projeto.
+5. Execute o comando `node .` para iniciar o servidor.
 6. Acesse o site em seu navegador, digitando o endereço `http://localhost:3000`.
 
 ## Contribuição
