@@ -1,0 +1,11 @@
+{
+    "server": {
+      "port": 3000,
+      "host": "localhost"
+    },
+    "site": {
+      "name": "Meu Site",
+      "description": "Uma breve descrição do meu site"
+    }
+  }
+  

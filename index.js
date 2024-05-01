@@ -1,1 +1,1 @@
-import './src/handlers/server.js';
+import './src/app.js';

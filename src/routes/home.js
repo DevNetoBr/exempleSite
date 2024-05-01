@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import config from '../configs/definitions.json' assert {type: 'json'};
+import config from '../configs/config.json' assert {type: 'json'};
 import crypto from 'crypto';
 
 const router = Router();
