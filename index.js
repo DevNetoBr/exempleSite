@@ -1,1 +1,1 @@
-require("./src/handlers/server.js");
+import './src/handlers/server.js';

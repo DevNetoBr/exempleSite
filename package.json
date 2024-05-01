@@ -1,0 +1,13 @@
+{
+  "name": "exemplesite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/DevNetoBr/exempleSite.git",
+  "author": "DevNetoBr <profissional.joseneto@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
