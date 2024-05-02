@@ -8,7 +8,7 @@ const app = express();
 // Objeto com as pastas que utilizaremos
 const folders = {
   public: path.join(process.cwd(), 'src', 'public'),
-  pages: path.join(process.cwd(),  'src','views')
+  pages: path.join(process.cwd(),  'src','public', 'views')
 };
 
 config.FOLDERS = folders;
